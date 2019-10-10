@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+ build:
+  commands:
+     - mkdir build
+     - cd build
+     - cmake ..
+     - cmake --build .
+     - cd ..
+artifacts:
+ files:
+  - build/app
